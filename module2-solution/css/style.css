@@ -52,3 +52,10 @@ section {
 .row {
   width: 100%;
 }
+/*********Desktop********************/
+@media (min-width: 992px){
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+  }
+}
