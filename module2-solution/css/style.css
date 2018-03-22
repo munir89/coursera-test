@@ -31,9 +31,10 @@ h1 {
 }
 #title-2 {
   background-color: brown;
+  color: white;
 }
 #title-3 {
-  background-color: crimson;
+background-color: burlywood ;
 }
 p {
   font-weight: bold;
