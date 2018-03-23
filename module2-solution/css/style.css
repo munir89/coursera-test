@@ -76,3 +76,12 @@ section {
     width: 100%;
   }
 }
+/*************mobile*********/
+/*****OR Just with out this media the basic style will be 
+      work with mobile device ********/
+@media (max-width: 767px){
+  .col-sm-12 {
+    width: 100%;
+    float: left;
+  }
+}
