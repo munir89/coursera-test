@@ -1,8 +1,12 @@
 body {
   font-size: 16px;
 }
+/*******HEADER ********/
 #header-nav {
   background-color: gray;
+  margin-bottom: 0;
+  border-radius: 0;
+  border: 1px solid black;
 }
 .navbar-brand h1 {
   color: black;
@@ -13,4 +17,21 @@ body {
 }
 .navbar-header {
   height: 70px;;
+}
+#collapsable-nav ul {
+  margin-top: 0;
+}
+#collapsable-nav ul li {
+  border: 1px solid black;
+}
+#collapsable-nav ul li a {
+  color: black;
+  font-family: cursive;
+}
+.navbar-header button.navbar-toggle:focus , .navbar-header .icon-bar  {
+  border: 2px solid white;
+  background-color: gray;
+}
+.navbar-header button.navbar-toggle , .navbar-header .icon-bar  {
+  border: 2px solid black;
 }
