@@ -35,3 +35,25 @@ body {
 .navbar-header button.navbar-toggle , .navbar-header .icon-bar  {
   border: 2px solid black;
 }
+/****MAIN*******/
+main section {
+  background-color: gray;
+  margin-bottom: 25px;
+}
+main > h1 {
+  font-family: cursive;
+  font-size: 1.8em;
+  font-weight: bolder;
+  margin-bottom: 35px;
+}
+section > h1 {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+section a {
+  color: blue;
+  text-decoration: underline;
+}
