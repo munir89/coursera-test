@@ -24,7 +24,8 @@ function lcController ($scope) {
 
   function check () {
     var msg = '';
-     if($scope.lunchMenu.length <= 3){
+    var items = $scope.lunchMenu.split(',');
+     if(items.length <= 3){
       msg = 'Enjoy!';
     } else {
       msg = 'Too much!';
