@@ -53,15 +53,17 @@ function ShoppingListCheckOffService () {
   ];
 
   var boughtList = [];
-  server.toBuyError = false;
-  server.boughtError = true;
+
   server.bought = function (itemIndex) {
     var boughtItem = toBuyList[itemIndex];
-    toBuyList.splice(itemIndex, 1);
     boughtList.push(boughtItem); 
+    server.remove(itemIndex);
   };
 
-
+  server.remove = function (itemIndex) {
+    toBuyList.splice(itemIndex, 1);
+  };
+  
   server.getToBuyList = function () {
     return toBuyList;
   };
