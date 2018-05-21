@@ -14,7 +14,6 @@ function ToBuyController (ShoppingListCheckOffService) {
 
   toBuy.bought = function (itemIndex) {
     ShoppingListCheckOffService.bought(itemIndex);
-    toBuy.toBuyError = ShoppingListCheckOffService.toBuyError; 
     };
 }
 
@@ -59,21 +58,15 @@ function ShoppingListCheckOffService () {
   server.bought = function (itemIndex) {
     var boughtItem = toBuyList[itemIndex];
     toBuyList.splice(itemIndex, 1);
-    boughtList.push(boughtItem);
-    server.boughtError = false;
-    if(toBuyList.length == 0) {
-      server.toBuyError = true;
-    } 
+    boughtList.push(boughtItem); 
   };
 
 
   server.getToBuyList = function () {
-    console.log('is run');
     return toBuyList;
   };
 
   server.getToBoughtList = function () {
-    console.log('IS RUN');
     return boughtList;
   };
 }
