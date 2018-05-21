@@ -32,23 +32,23 @@ function ShoppingListCheckOffService () {
 
    var toBuyList = [
     {
-      name: 'cookies',
+      name: 'Cookies',
       quantity: 10
     },
     {
-      name: 'chips',
+      name: 'Chips',
       quantity: 6
     },
     {
-      name: 'banan',
+      name: 'Banana',
       quantity: 8
     },
     {
-      name: 'appel',
+      name: 'Appel',
       quantity: 4
     },
     {
-      name: 'milk',
+      name: 'Milk',
       quantity: 3
     }
   ];
