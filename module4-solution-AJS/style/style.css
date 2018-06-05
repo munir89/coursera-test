@@ -1,0 +1,43 @@
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: #b3b3b3;
+}
+.category, .items {
+  list-style-type: none;
+}
+
+a[ui-sref]:link {
+  color: blue;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+ul a[ui-sref]:link {
+  text-decoration: none;
+}
+ul a[ui-sref]:visited {
+  color: blue;
+}
+ul a[ui-sref]:hover {
+  color: red;
+  font-size: 120%;
+}
+
+li.items:nth-child(odd) {
+  background-color: #b3b3b352;
+  color: crimson;
+  display: block;
+  padding: 5px;
+}
+
+li.items:nth-child(even) {
+  color: blue;
+  padding: 5px;
+}
+.active {
+  color: crimson;
+  font-weight: bold;
+}
