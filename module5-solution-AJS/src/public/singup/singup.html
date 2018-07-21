@@ -1,0 +1,72 @@
+<div class="container" >
+  <h1>Sing Up For The Newsletter</h1>
+  <form name="singUp" novalidate class="center-block">
+    <label>First Name: </label>
+    <input type="text" 
+            name="firstName" 
+            ng-model="singUpCtrl.user.firstName"
+            required
+            placeholder="First Name"
+            minlength="4">
+    <span ng-if="singUp.firstName.$error.required && singUp.firstName.$touched">
+      First Name is required.
+    </span>
+    <span ng-if="singUp.firstName.$error.minlength && singUp.firstName.$touched">
+        First Name Must be more than 4 char.
+    </span>
+    <br>
+    <label>Last Name: </label>
+    <input type="text" 
+            name="lastName" 
+            ng-model="singUpCtrl.user.lastName"
+            required
+            placeholder="Last Name">
+    <span ng-if="singUp.lastName.$error.required && singUp.lastName.$touched">
+      Last Name is required.
+    </span>
+    <span ng-if="singUp.lastName.$error.minlength && singUp.lastName.$touched">
+        Last Name Must be more than 4 char.
+    </span>
+    <br>
+    <label>
+      Email Address: 
+    </label>
+    <input type="email" 
+            name="email"
+            ng-model="singUpCtrl.user.email"
+            placeholder="Email"
+            required>
+    <span ng-if="singUp.email.$invalid && singUp.email.$touched">
+      Must be a valid email address: example@example
+    </span>
+    <br>
+    <label>Phone Number: </label>
+    <input type="text" 
+            name="phone"
+            pattern="(\d{3})-(\d{3})-(\d{4})"
+            ng-model="singUpCtrl.user.phone"
+            placeholder="###-###-####">
+    <span ng-if="singUp.phone.$invalid && singUp.phone.$touched">
+      Invalid format : ###-###-####.
+    </span>
+    <br>
+    <label>Your favorite dish (Menu number):</label>
+    <input type="text" name="category" ng-model="singUpCtrl.user.shortName">
+
+    <span ng-if="singUpCtrl.notFound">
+        No such menu number exists
+    </span>
+    <br>
+    <label></label>
+    <button 
+        ng-disabled="singUp.$invalid"
+        ng-click="singUpCtrl.submit()">
+        Submit
+    </button>
+
+    <span ng-if="singUpCtrl.found">
+      Your information has been saved
+    </span>
+
+  </form>
+</div>
