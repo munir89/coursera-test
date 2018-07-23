@@ -51,7 +51,7 @@
     </span>
     <br>
     <label>Your favorite dish (Menu number):</label>
-    <input type="text" name="category" ng-model="singUpCtrl.user.shortName">
+    <input type="text" name="category" ng-model="singUpCtrl.user.shortName" placeholder="Like F1">
 
     <span ng-if="singUpCtrl.notFound">
         No such menu number exists
@@ -64,7 +64,7 @@
         Submit
     </button>
 
-    <span ng-if="singUpCtrl.found">
+    <span ng-if="singUpCtrl.found" class="sucess">
       Your information has been saved
     </span>
 
